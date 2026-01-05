@@ -7,16 +7,14 @@
 body {
   background: #f4f4f4;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
 }
 
 main {
   min-height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #989980;
   padding: 40px;
 }
