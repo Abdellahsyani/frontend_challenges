@@ -6,11 +6,13 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 header {
-  background: #666;
+  background: #008070;
   padding: 1rem 2rem;
   color: white;
 }
@@ -37,11 +39,12 @@ nav ul li a {
 }
 
 main {
-  min-height: 80vh;
+  flex: 1;
   display: flex;
   background: #409089;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .contianer {
@@ -79,8 +82,7 @@ img {
 
 footer {
   display: flex;
-  background: #550031;
+  background: #008070;
   text-align: center;
   padding: 20px;
-  margin-top: 90px;
 }
