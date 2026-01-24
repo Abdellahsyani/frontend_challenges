@@ -112,6 +112,27 @@ article.card {
   transform: rotateY(180deg);
 }
 
+.card-back a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  background: grey;
+  width: 200px;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card-back a:hover {
+  border-box: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  background: #409089;
+}
+
 .is-flipped {
   transform: rotateY(180deg);
 }
