@@ -10,7 +10,8 @@ body {
 }
 
 main {
-  display: flex;
+  position: relative;
+  padding: 60px;
   min-height: 100vh;
   background: #000089;
 }
@@ -23,23 +24,25 @@ main {
 .weather-main {
   display: flex;
   height: 40px;
-  gap: 1000px;
+  position: relative;
   background: #000089;
 }
 
 .icon {
-  margin-left: 100px;
-  margin-top: 50px;
+  position: absolute;
+  /* margin-left: 100px; */
+  /* margin-top: 50px; */
 }
 
 .unit {
   display: flex;
+  position: absolute;
   width: 120px;
   height: 40px;
+  right: 0;
   align-items: center;
   background: #405982;
   border-radius: 5px;
-  margin-top: 70px;
 }
 
 .unit p {
@@ -51,4 +54,31 @@ main {
   width: 18px;
   height: 20px;
   margin-left: 15px;
+}
+
+button {
+  background: #405982;
+  border: none;
+}
+
+.temp {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  top: 45px;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  background: #405982;
+}
+
+.temp.show {
+  display: block;
+}
+
+.temp a {
+  margin-top: 15px;
+  text-decoration: none;
 }
