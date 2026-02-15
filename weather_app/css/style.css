@@ -66,6 +66,7 @@ button {
   position: absolute;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   right: 0;
   top: 45px;
   height: 150px;
@@ -75,10 +76,21 @@ button {
 }
 
 .temp.show {
-  display: block;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
 }
 
-.temp a {
-  margin-top: 15px;
-  text-decoration: none;
+.hd {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background: white;
+}
+
+.temp a:hover {
+  text-decoration: underline;
 }
