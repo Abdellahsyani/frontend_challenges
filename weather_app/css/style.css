@@ -63,7 +63,7 @@ button {
 
 .temp {
   display: none;
-  position: absolute;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -76,19 +76,21 @@ button {
 }
 
 .temp.show {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  position: absolute;
 }
 
 .hd {
   display: flex;
   justify-content: center;
   text-align: center;
+  position: absolute;
+  top: 10px;
   width: 170px;
   height: 30px;
   border-radius: 5px;
-  background: white;
+  color: white;
+  background: #405982;
 }
 
 .temp a:hover {
