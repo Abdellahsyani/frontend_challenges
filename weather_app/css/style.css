@@ -69,7 +69,7 @@ button {
   justify-content: center;
   right: 0;
   top: 45px;
-  height: 150px;
+  height: 200px;
   width: 180px;
   border-radius: 5px;
   background: #405982;
@@ -93,6 +93,29 @@ button {
   background: #405982;
 }
 
-.temp a:hover {
-  text-decoration: underline;
+.temperature {
+  display: flex;
+  flex-direction: column;
+  space-between: 10px;
+  position: relative;
+}
+
+.temperature h3 {
+  top: 0;
+}
+
+.cel {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 30px;
+  border-radius: 4px;
+  background: green;
+}
+
+.cel img,
+.fah img {
+  display: none;
+  width: 15px;
+  height: 30px;
 }
