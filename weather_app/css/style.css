@@ -110,22 +110,20 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 160px;
-  height: 30px;
+  height: 40px;
+  padding: 0 15px;
   border-radius: 6px;
-  position: relative;
+  margin-bottom: 2px;
+  cursor: pointer;
   background: green;
 }
 
-.cel a {
-  position: absolute;
-  text-decoration: none;
-  left: 6px;
-}
-
+.cel a,
 .fah a {
-  position: absolute;
   text-decoration: none;
-  left: 6px;
+  color: white;
+  text-align: left;
+  flex-grow: 1;
 }
 
 .cel img,
@@ -133,6 +131,7 @@ button {
   display: none;
   width: 15px;
   height: 30px;
+  flex-shrink: 0;
 }
 
 .cel.active img,
