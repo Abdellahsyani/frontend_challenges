@@ -69,7 +69,7 @@ button {
   justify-content: center;
   right: 0;
   top: 45px;
-  height: 200px;
+  height: 350px;
   width: 180px;
   border-radius: 5px;
   background: #405982;
@@ -96,8 +96,6 @@ button {
 .temperature {
   display: flex;
   flex-direction: column;
-  space-between: 10px;
-  position: relative;
 }
 
 .temperature h3 {
@@ -137,4 +135,29 @@ button {
 .cel.active img,
 .fah.active img {
   display: block;
+}
+
+.wind {
+  display: flex;
+  flex-direction: column;
+}
+
+.km,
+.mp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  background: green;
+}
+
+.km a,
+.mp a {
+  text-decoration: none;
+  color: white;
 }
