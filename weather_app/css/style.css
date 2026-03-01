@@ -13,7 +13,7 @@ main {
   position: relative;
   padding: 60px;
   min-height: 100vh;
-  background: #000066;
+  background: hsl(243, 96%, 9%);
 }
 
 /* @font-face { */
@@ -25,7 +25,7 @@ main {
   display: flex;
   height: 40px;
   position: relative;
-  background: #000066;
+  background: hsl(243, 96%, 9%);
 }
 
 .icon {
@@ -41,13 +41,19 @@ main {
   height: 40px;
   right: 0;
   align-items: center;
-  background: #404040;
   border-radius: 5px;
+  border: 1px solid transparent;
+  background: hsl(243, 23%, 24%);
+  transition: border-color 0.2s;
+}
+
+.unit:hover {
+  border-color: hsl(20, 15%, 50%);
 }
 
 .unit p {
   margin-left: 5px;
-  color: white;
+  background: hsl(243, 23%, 24%);
 }
 
 .unit img {
@@ -57,7 +63,7 @@ main {
 }
 
 button {
-  background: #404040;
+  background: hsl(243, 23%, 24%);
   border: none;
 }
 
@@ -72,7 +78,7 @@ button {
   height: 350px;
   width: 190px;
   border-radius: 5px;
-  background: #405982;
+  background: hsl(243, 23%, 24%);
 }
 
 .temp.show {
@@ -89,8 +95,8 @@ button {
   width: 170px;
   height: 30px;
   border-radius: 5px;
-  color: white;
-  background: #405982;
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 35%);
 }
 
 .wind .precip .temperature {
@@ -99,6 +105,7 @@ button {
 }
 
 .temperature h3 {
+  color: hsl(0, 0%, 100%);
   top: 0;
 }
 
@@ -113,13 +120,13 @@ button {
   border-radius: 6px;
   margin-bottom: 2px;
   cursor: pointer;
-  background: green;
+  background: hsl(243, 23%, 24%);
 }
 
 .cel a,
 .fah a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-align: left;
   flex-grow: 1;
 }
@@ -158,13 +165,13 @@ button {
   border-radius: 6px;
   margin-bottom: 2px;
   cursor: pointer;
-  background: green;
+  background: hsl(243, 23%, 24%);
 }
 
 .km a,
 .mp a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .mili,
@@ -176,7 +183,7 @@ button {
   height: 40px;
   padding: 0 15px;
   border-radius: 6px;
-  background: green;
+  background: hsl(243, 23%, 24%);
   margin-bottom: 2px;
   cursor: pointer;
 }
@@ -184,5 +191,5 @@ button {
 .mili a,
 .inches a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
