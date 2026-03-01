@@ -89,13 +89,15 @@ button {
 .hd {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   position: absolute;
-  top: 10px;
+  top: 5px;
   width: 170px;
-  height: 30px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 7px;
   color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
   background: hsl(243, 23%, 35%);
 }
 
@@ -106,7 +108,6 @@ button {
 
 .temperature h3 {
   color: hsl(0, 0%, 100%);
-  top: 0;
 }
 
 .cel,
