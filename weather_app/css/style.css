@@ -70,7 +70,7 @@ button {
   right: 0;
   top: 45px;
   height: 350px;
-  width: 180px;
+  width: 190px;
   border-radius: 5px;
   background: #405982;
 }
@@ -93,7 +93,7 @@ button {
   background: #405982;
 }
 
-.temperature {
+.wind .precip .temperature {
   display: flex;
   flex-direction: column;
 }
@@ -107,7 +107,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 160px;
+  width: 170px;
   height: 40px;
   padding: 0 15px;
   border-radius: 6px;
@@ -125,7 +125,11 @@ button {
 }
 
 .cel img,
-.fah img {
+.fah img,
+.mili img,
+.inches img,
+.km img,
+.mp img {
   display: none;
   width: 15px;
   height: 30px;
@@ -133,13 +137,12 @@ button {
 }
 
 .cel.active img,
-.fah.active img {
+.fah.active img,
+.mili.active img,
+.inches.active img,
+.mk.active img,
+.mp.active img {
   display: block;
-}
-
-.wind {
-  display: flex;
-  flex-direction: column;
 }
 
 .km,
@@ -147,7 +150,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 160px;
+  width: 170px;
   height: 40px;
   padding: 0 15px;
   border-radius: 6px;
@@ -158,6 +161,26 @@ button {
 
 .km a,
 .mp a {
+  text-decoration: none;
+  color: white;
+}
+
+.mili,
+.inches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 6px;
+  background: green;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.mili a,
+.inches a {
   text-decoration: none;
   color: white;
 }
