@@ -13,7 +13,7 @@ main {
   position: relative;
   padding: 60px;
   min-height: 100vh;
-  background: #000089;
+  background: #000066;
 }
 
 /* @font-face { */
@@ -25,7 +25,7 @@ main {
   display: flex;
   height: 40px;
   position: relative;
-  background: #000089;
+  background: #000066;
 }
 
 .icon {
@@ -41,7 +41,7 @@ main {
   height: 40px;
   right: 0;
   align-items: center;
-  background: #405982;
+  background: #404040;
   border-radius: 5px;
 }
 
@@ -57,7 +57,7 @@ main {
 }
 
 button {
-  background: #405982;
+  background: #404040;
   border: none;
 }
 
@@ -124,24 +124,26 @@ button {
   flex-grow: 1;
 }
 
-.cel img,
-.fah img,
-.mili img,
-.inches img,
-.km img,
-.mp img {
+/* .cel img, */
+/* .fah img, */
+/* .mili img, */
+/* .inches img, */
+/* .km img, */
+/* .mp img { */
+.option img {
   display: none;
   width: 15px;
   height: 30px;
   flex-shrink: 0;
 }
 
-.cel.active img,
-.fah.active img,
-.mili.active img,
-.inches.active img,
-.mk.active img,
-.mp.active img {
+/* .cel.active img, */
+/* .fah.active img, */
+/* .mili.active img, */
+/* .inches.active img, */
+/* .mk.active img, */
+/* .mp.active img { */
+.option.active img {
   display: block;
 }
 
